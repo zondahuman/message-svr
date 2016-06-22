@@ -11,6 +11,8 @@
         >
 
 	<import resource="spring-service.xml" />
-    <import resource="classpath:dubbo-service.xml" />
-    
+	<import resource="spring-mvc.xml" />
+	<import resource="spring-kafka-producer.xml" />
+	<import resource="spring-kafka-consumer.xml" />
+
 </beans>  

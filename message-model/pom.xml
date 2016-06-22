@@ -5,12 +5,32 @@
     <parent>
         <artifactId>message-svr</artifactId>
         <groupId>com.abin.lee</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>message-model</artifactId>
     <packaging>jar</packaging>
+
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <artifactId>message-common</artifactId>
+                <groupId>com.abin.lee</groupId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <artifactId>message-common</artifactId>
+            <groupId>com.abin.lee</groupId>
+        </dependency>
+    </dependencies>
+
 
 
 </project>

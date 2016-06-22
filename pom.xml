@@ -6,7 +6,7 @@
 
     <groupId>com.abin.lee</groupId>
     <artifactId>message-svr</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <modules>
         <module>message-common</module>
@@ -44,6 +44,12 @@
     <dependencyManagement>
 
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.springframework.integration/spring-integration-kafka -->
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-kafka</artifactId>
+                <version>1.3.1.RELEASE</version>
+            </dependency>
             <dependency>
                 <groupId>com.googlecode</groupId>
                 <artifactId>reflectasm</artifactId>
@@ -581,6 +587,12 @@
             <groupId>asm</groupId>
             <artifactId>asm-commons</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.integration/spring-integration-kafka -->
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-kafka</artifactId>
+        </dependency>
+
     </dependencies>
 
 
@@ -594,6 +606,7 @@
                 <includes>
                     <include>**/*.vm</include>
                     <include>**/*.properties</include>
+                    <include>spring/*.xml</include>
                 </includes>
                 <!-- 排除  -->
                 <excludes>
@@ -605,6 +618,9 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>**/*.*</include>
+                    <include>**/*.vm</include>
+                    <include>**/*.properties</include>
+                    <include>spring/*.xml</include>
                 </includes>
                 <excludes>
                     <exclude>**/*.log</exclude>
@@ -645,10 +661,6 @@
                     </execution>
                 </executions>
 
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
