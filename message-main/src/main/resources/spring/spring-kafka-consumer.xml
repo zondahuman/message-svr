@@ -24,9 +24,10 @@
 
     <int-kafka:inbound-channel-adapter
             id="kafkaInboundChannelAdapter"
-            kafka-consumer-context-ref="consumerContext"
-            auto-startup="false"
-            channel="inputFromKafka">
+            kafka-consumer-context-ref="kafkaConsumerContext"
+            auto-startup="true"
+            channel="inputFromKafka"
+            >
         <int:poller fixed-delay = "1000" time-unit = "MILLISECONDS" receive-timeout = "0" task-executor = "consumerTaskExecutor" />
     </int-kafka:inbound-channel-adapter>
 
@@ -44,11 +45,10 @@
         </property>
     </bean>
 
+    <!--<int:outbound-channel-adapter channel="inputFromKafka"-->
+                                  <!--ref="kafkaConsumerService" method="consumeMessage" />-->
 
-    <int:outbound-channel-adapter channel="inputFromKafka"
-                                  ref="kafkaConsumerService" method="processMessage" />
-
-    <int-kafka:consumer-context id="consumerContext"
+    <int-kafka:consumer-context id="kafkaConsumerContext"
                                 consumer-timeout="1000"
                                 zookeeper-connect="zookeeperConnect" consumer-properties="consumerProperties">
         <int-kafka:consumer-configurations>
@@ -60,4 +60,6 @@
             </int-kafka:consumer-configuration>
         </int-kafka:consumer-configurations>
     </int-kafka:consumer-context>
+
+
 </beans>

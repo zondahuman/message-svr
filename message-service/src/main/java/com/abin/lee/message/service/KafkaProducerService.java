@@ -9,6 +9,6 @@ package com.abin.lee.message.service;
  */
 public interface KafkaProducerService {
 
-     void produceMessage(String messageId);
+    public void produceMessage(String messageId);
 
 }

@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * Time: 下午10:58
  * To change this template use File | Settings | File Templates.
  */
-@Service
+@Service(value = "kafkaConsumerService")
 public class KafkaConsumerServiceImpl implements KafkaConsumerService {
     @Resource
     QueueChannel inputFromKafka;

@@ -9,5 +9,5 @@ package com.abin.lee.message.service;
  */
 public interface KafkaConsumerService {
 
-       void consumeMessage();
+    public void consumeMessage();
 }

@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-    <description>dubbo-svr</description>
+    <description>message-svr</description>
 
-    <display-name>dubbo-svr</display-name>
+    <display-name>message-svr</display-name>
 
 
     <!--字符过滤器 -->

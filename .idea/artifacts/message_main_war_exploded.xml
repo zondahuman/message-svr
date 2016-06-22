@@ -96,9 +96,6 @@
           <element id="library" level="project" name="Maven: com.yammer.metrics:metrics-core:2.2.0" />
           <element id="library" level="project" name="Maven: org.apache.kafka:kafka_2.10:0.8.2.2" />
           <element id="library" level="project" name="Maven: org.scala-lang:scala-library:2.10.4" />
-          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" />
-          <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
-          <element id="library" level="project" name="Maven: io.netty:netty:3.7.0.Final" />
           <element id="library" level="project" name="Maven: net.sf.jopt-simple:jopt-simple:3.2" />
           <element id="library" level="project" name="Maven: com.101tec:zkclient:0.3" />
           <element id="library" level="project" name="Maven: org.springframework.integration:spring-integration-core:4.1.8.RELEASE" />
@@ -106,6 +103,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.1.8.RELEASE" />
           <element id="library" level="project" name="Maven: com.goldmansachs:gs-collections:5.0.0" />
           <element id="library" level="project" name="Maven: com.goldmansachs:gs-collections-api:5.0.0" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" />
+          <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
+          <element id="library" level="project" name="Maven: io.netty:netty:3.7.0.Final" />
         </element>
       </element>
     </root>

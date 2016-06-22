@@ -90,9 +90,6 @@
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka_2.10:0.8.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.4" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
-    <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jopt-simple:jopt-simple:3.2" level="project" />
     <orderEntry type="library" name="Maven: com.101tec:zkclient:0.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.integration:spring-integration-core:4.1.8.RELEASE" level="project" />
@@ -100,6 +97,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.goldmansachs:gs-collections:5.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.goldmansachs:gs-collections-api:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
   </component>
 </module>
 
